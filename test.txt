@@ -1,0 +1,83 @@
+User Access Verification
+
+Username: 
+Username: atman
+Password: 
+RTR6509-2T#en
+Password: 
+RTR6509-2T#sh ip arp 120.96.42.110
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  120.96.42.110           4   0013.5700.5f51  ARPA   Vlan4
+RTR6509-2T#sh ip arp 120.96.42.125 
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  120.96.42.125           4   0013.5700.a7fb  ARPA   Vlan4
+RTR6509-2T#sh ip arp 120.96.42.115
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  120.96.42.115           4   0013.5700.63e8  ARPA   Vlan4
+RTR6509-2T#sh mac add add 0013.5700.5f51
+
+Legend: * - primary entry
+        age - seconds since last seen
+        n/a - not available
+        S - secure entry
+        R - router's gateway mac address entry
+        D - Duplicate mac address entry
+
+Displaying entries from active supervisor:
+
+     vlan   mac address    type   learn    age                 ports
+----+----+---------------+-------+-----+----------+-----------------------------
+*       4 0013.5700.5f51  dynamic  Yes        0     Gi1/1/9
+
+
+Displaying entries from standby supervisor:
+
+     vlan   mac address    type   learn    age                 ports
+----+----+---------------+-------+-----+----------+-----------------------------
+        4 0013.5700.5f51  dynamic  Yes      215     Gi1/1/9
+
+
+RTR6509-2T#sh mac add add 0013.5700.a7fb
+
+Legend: * - primary entry
+        age - seconds since last seen
+        n/a - not available
+        S - secure entry
+        R - router's gateway mac address entry
+        D - Duplicate mac address entry
+
+Displaying entries from active supervisor:
+
+     vlan   mac address    type   learn    age                 ports
+----+----+---------------+-------+-----+----------+-----------------------------
+*       4 0013.5700.a7fb  dynamic  Yes        0     Po3
+
+
+Displaying entries from standby supervisor:
+
+     vlan   mac address    type   learn    age                 ports
+----+----+---------------+-------+-----+----------+-----------------------------
+*       4 0013.5700.a7fb  dynamic  Yes        0     Po3
+
+
+RTR6509-2T#sh mac add add 0013.5700.63e8
+
+Legend: * - primary entry
+        age - seconds since last seen
+        n/a - not available
+        S - secure entry
+        R - router's gateway mac address entry
+        D - Duplicate mac address entry
+
+Displaying entries from active supervisor:
+
+     vlan   mac address    type   learn    age                 ports
+----+----+---------------+-------+-----+----------+-----------------------------
+*       4 0013.5700.63e8  dynamic  Yes        0     Gi1/1/9
+
+
+Displaying entries from standby supervisor:
+
+     vlan   mac address    type   learn    age                 ports
+----+----+---------------+-------+-----+----------+-----------------------------
+        4 0013.5700.63e8  dynamic  Yes      240     Gi1/1/9
